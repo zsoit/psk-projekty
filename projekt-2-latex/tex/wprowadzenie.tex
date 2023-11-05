@@ -1,0 +1,70 @@
+
+\section{Wprowadzenie}
+Wprowadzenie do Projektu Sieci Komputerowej dla Firmy AnyCode, która zajmuję się produkcją oprogramowania.
+
+\subsection{Cel Projektu}
+Niniejszy dokument stanowi opracowanie projektu infrastruktury teleinformatycznej firmy AnyCode, która planuje rozpocząć działalność w zaadaptowanym budynku mieszkalnym. Celem tego projektu jest stworzenie nowoczesnej i efektywnej infrastruktury sieciowej, która umożliwi firmie sprawną komunikację, dostęp do zasobów informatycznych oraz obsługę klientów w branży IT. Projekt ma na celu zapewnić firmie solidne podstawy techniczne, umożliwiając osiągnięcie sukcesu w konkurencyjnym rynku.
+
+\subsection{Założenia projektu}
+Przyjęte założenia projektu obejmują:
+\begin{itemize}
+    \item Dostępność budynku mieszkalnego w ramach przekazanego projektu architektonicznego.
+    \item Zgodność z przewidywanym terminem odbioru, wynoszącym cztery tygodnie od rozpoczęcia prac, minus 1 dzień.
+    \item Wykorzystanie technologii Gigabit Ethernet (1GbE) w oparciu o kabel UTP kat. 5e lub lepszy oraz światłowód do budowy infrastruktury sieciowej.
+    \item Zachowanie równowagi pomiędzy nowoczesnymi technologiami a efektywnością kosztową.
+    \item Zainstalowanie telefonii VoIP na każdym stanowisku komputerowym.
+    \item Utworzenie centralnego serwera zasobów, kolorowej drukarki sieciowej i skanera.
+    \item Umowę z zewnętrzną firmą hostingową do utrzymania zasobów firmowych, w tym hosting serwisu www i poczty elektronicznej   
+\end{itemize}
+
+\subsection{Zakres projektu}
+
+Projekt obejmuje:
+
+\begin{itemize}
+    \item Wytyczenie topologii sieci oraz wybór odpowiednich rozwiązań sprzętowych.
+    \item Specyfikację techniczną urządzeń, sprzętu i materiałów.
+    \item Propozycję serwerów, stacji roboczych oraz stacji administracyjnych.
+    \item Określenie oprogramowania użytkowego, systemów operacyjnych i narzędzi.
+    \item Schemat logiczny i fizyczny połączeń urządzeń oraz sprzętu komputerowego.
+    \item Kosztorys projektu, uwzględniający wszystkie elementy, w tym urządzenia, materiały i robociznę.
+    \item Harmonogram prac, z określeniem ilości i kwalifikacji instalatorów oraz ilości roboczogodzin.
+    \item Dokumentację projektową, w tym rysunki, schematy i załączniki.
+\end{itemize}
+
+
+\subsection{Terminy i Harmonogram}
+
+Projekt rozpocznie się z chwilą podpisania umowy i ma na celu zakończenie prac w terminie czterech tygodni, zgodnie z ustalonym harmonogramem. Terminy dostaw sprzętu oraz instalacji będą dostosowane do harmonogramu, aby zapewnić zgodność z założonymi terminami projektu.\\
+
+
+\begin{ganttchart}[
+  hgrid,
+  vgrid,
+  x unit=0.6cm,
+  y unit title=0.6cm,
+  y unit chart=0.7cm,
+  title height=1,
+  group/.style={draw=black, fill=gray!50},
+  group left shift=0,
+  group right shift=0,
+  group height=0.7,  % Zwiększenie wysokości grupy
+  group peaks tip position=0,
+  bar/.style={draw=black, fill=blue!30, minimum height=1cm},  % Zwiększenie wysokości paska
+  bar label font=\footnotesize
+]{1}{16}
+  \gantttitle{Listopad 2023}{16} \\
+  \gantttitle{Tydzien 1}{4}
+  \gantttitle{Tydzien 2}{4}
+  \gantttitle{Tydzien 3}{4}
+  \gantttitle{Tydzien 4}{4} \\
+  \ganttbar{Podpisanie umowy}{1}{1} \\
+  \ganttgroup{Dostawa sprzętu}{2}{3} \\
+  \ganttbar{Instalacja sieci}{4}{6} \\
+  \ganttbar{Konfiguracja urządzeń}{7}{9} \\
+  \ganttgroup{Testy i weryfikacja}{10}{13} \\
+  \ganttbar{Szkolenie pracowników}{14}{15} \\
+  \ganttmilestone{Zakończenie projektu}{16} \\
+\end{ganttchart}
+
+  

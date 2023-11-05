@@ -1,0 +1,28 @@
+% primary info
+\newcommand{\mytitle}{Sieć operatora Plus}
+\newcommand{\myauthor}{Jakub Achtelik}
+\newcommand{\mydate}{2023}
+\newcommand{\school}{Politechnika Koszalińska}
+\newcommand{\subject}{Projektowanie sieci komputerowych}
+\newcommand{\subjectyear}{Informatyka III Semestr, Grupa 1}
+\newcommand{\footleft}{\thepage}
+\newcommand{\footrigt}{\subject \\ \subjectyear}
+\newcommand{\footcenter}{\myauthor}
+
+\include{./src/template/config}
+
+\begin{document} 
+
+    \include{./src/template/titlepage.tex}
+    \include{./src/template/tableofcontents.tex}
+
+    \include{./tex/opis-operatora.tex}\newpage
+    \include{./tex/opis-technologia.tex}\newpage
+    \include{./tex/schemat.tex}\newpage
+    \include{./tex/specyfikacja-urzadzen.tex}\newpage
+    \include{./tex/protokoly-sieciowe.tex}\newpage
+    \include{./tex/rankingi.tex}\newpage
+
+    
+
+\end{document}
